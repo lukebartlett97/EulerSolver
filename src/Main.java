@@ -2,10 +2,10 @@ import solvers.*;
 
 public class Main
 {
-  private static final boolean VERBOSE = false;
+  private static final boolean VERBOSE = true;
   public static void main(String[] args) throws IllegalAccessException, InstantiationException
   {
-    solveAllEuler();
+    solveEuler(CoinSums.class);
   }
 
   private static void solveAllEuler() throws InstantiationException, IllegalAccessException
@@ -24,6 +24,10 @@ public class Main
     solveEuler(PowerOfTwoSum.class);
     solveEuler(LargeSum.class);
     solveEuler(LargestProductGrid.class);
+    solveEuler(MaxTrianglePath.class);
+    solveEuler(SelfPower.class);
+    solveEuler(LatticePaths.class);
+    solveEuler(CoinSums.class);
   }
 
   private static void solveEuler(Class solverClass) throws IllegalAccessException, InstantiationException
